@@ -35,7 +35,8 @@ S3Zipper.prototype = {
         self.s3bucket = new AWS.S3({
             params: {
                 Bucket: self.awsConfig.bucket
-            }
+            },
+            s3ForcePathStyle: awsConfig.s3ForcePathStyle,
         });
     }
     , filterOutFiles: function (fileObj) {

@@ -4,7 +4,7 @@
   "description": "Zip files from and to an Amazon AWS S3 Bucket directory as a stream, file or fragments. Allows filtering files.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cd node_modules/s3 && yarn add graceful-fs@~4.1.4"
+    "postinstall": "cd ./node_modules/s3 && yarn add graceful-fs@~4.1.4"
   },
   "dependencies": {
     "archiver": "0.21.*",

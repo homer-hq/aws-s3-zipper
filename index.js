@@ -3,7 +3,7 @@ var archiver = require('archiver');
 var async = require('async');
 var AWS = require('aws-sdk');
 var fs = require('fs');
-var s3 = require('s3');
+var s3 = require('@auth0/s3');
 
 function S3Zipper(awsConfig) {
     var self = this;
